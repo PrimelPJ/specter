@@ -8,6 +8,8 @@ from specter.yara_engine import YaraEngine, YaraRule, YaraMatch
 from specter.sample_db import SampleDatabase, MalwareSample, ClassificationResult
 from specter.behavioral import BehavioralAnalyzer, BehaviorReport, BehaviorCategory
 from specter.classifier import SampleClassifier, ClassificationFeatures, MalwareClass
+from specter.network_extractor import NetworkExtractor, NetworkIndicator, NetworkExtractionResult
+from specter.string_extractor import StringExtractor, ExtractedString, StringExtractionResult
 
 __all__ = [
     "PEParser",
@@ -27,6 +29,12 @@ __all__ = [
     "SampleClassifier",
     "ClassificationFeatures",
     "MalwareClass",
+    "NetworkExtractor",
+    "NetworkIndicator",
+    "NetworkExtractionResult",
+    "StringExtractor",
+    "ExtractedString",
+    "StringExtractionResult",
 ]
 
 __version__ = "0.1.0"
