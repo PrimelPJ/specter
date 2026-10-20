@@ -11,6 +11,9 @@ license = {text = "MIT"}
 authors = [{name = "Primel Jayawardana", email = "primelpj21@gmail.com"}]
 dependencies = []
 
+[project.scripts]
+specter = "specter.cli:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
