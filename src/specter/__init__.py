@@ -17,6 +17,11 @@ from specter.fuzzy_hash import (
     SimilarityCluster,
     RollingHash,
 )
+from specter.report_generator import (
+    ReportGenerator,
+    AnalysisReport,
+    RiskScorer,
+)
 
 __all__ = [
     "PEParser",
@@ -47,6 +52,9 @@ __all__ = [
     "SampleSimilarityDB",
     "SimilarityCluster",
     "RollingHash",
+    "ReportGenerator",
+    "AnalysisReport",
+    "RiskScorer",
 ]
 
 __version__ = "0.1.0"
