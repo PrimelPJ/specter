@@ -10,6 +10,13 @@ from specter.behavioral import BehavioralAnalyzer, BehaviorReport, BehaviorCateg
 from specter.classifier import SampleClassifier, ClassificationFeatures, MalwareClass
 from specter.network_extractor import NetworkExtractor, NetworkIndicator, NetworkExtractionResult
 from specter.string_extractor import StringExtractor, ExtractedString, StringExtractionResult
+from specter.fuzzy_hash import (
+    FuzzyHasher,
+    FuzzyDigest,
+    SampleSimilarityDB,
+    SimilarityCluster,
+    RollingHash,
+)
 
 __all__ = [
     "PEParser",
@@ -35,6 +42,11 @@ __all__ = [
     "StringExtractor",
     "ExtractedString",
     "StringExtractionResult",
+    "FuzzyHasher",
+    "FuzzyDigest",
+    "SampleSimilarityDB",
+    "SimilarityCluster",
+    "RollingHash",
 ]
 
 __version__ = "0.1.0"
