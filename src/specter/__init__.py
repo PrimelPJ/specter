@@ -22,6 +22,14 @@ from specter.report_generator import (
     AnalysisReport,
     RiskScorer,
 )
+from specter.memory_analyzer import (
+    MemoryAnalyzer,
+    MemoryAnalysisReport,
+    MemoryRegion,
+    LoadedModule,
+    HookFinding,
+    InjectionFinding,
+)
 
 __all__ = [
     "PEParser",
@@ -55,6 +63,12 @@ __all__ = [
     "ReportGenerator",
     "AnalysisReport",
     "RiskScorer",
+    "MemoryAnalyzer",
+    "MemoryAnalysisReport",
+    "MemoryRegion",
+    "LoadedModule",
+    "HookFinding",
+    "InjectionFinding",
 ]
 
 __version__ = "0.1.0"
