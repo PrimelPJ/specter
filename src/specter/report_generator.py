@@ -578,7 +578,7 @@ class ReportGenerator:
             f"<div style='width:100px;text-align:center'>"
             f"<div style='background:#1c2128;border-radius:4px;height:80px;"
             f"display:flex;align-items:flex-end;overflow:hidden'>"
-            f"<div style='width:100%;height:{pct}%;background:{color};'"></div></div>"
+            f"<div style='width:100%;height:{pct}%;background:{color};'></div></div>"
             f"<div style='font-size:11px;margin-top:4px;color:var(--muted)'>"
             f"{html.escape(s.section_name)}</div>"
             f"<div style='font-size:11px;color:{color}'>{s.entropy:.2f}</div>"
