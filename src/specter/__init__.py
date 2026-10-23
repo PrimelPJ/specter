@@ -30,6 +30,12 @@ from specter.memory_analyzer import (
     HookFinding,
     InjectionFinding,
 )
+from specter.obfuscation_detector import (
+    ObfuscationDetector,
+    ObfuscationReport,
+    ObfuscationFinding,
+    ObfuscationType,
+)
 
 __all__ = [
     "PEParser",
@@ -69,6 +75,10 @@ __all__ = [
     "LoadedModule",
     "HookFinding",
     "InjectionFinding",
+    "ObfuscationDetector",
+    "ObfuscationReport",
+    "ObfuscationFinding",
+    "ObfuscationType",
 ]
 
 __version__ = "0.1.0"
