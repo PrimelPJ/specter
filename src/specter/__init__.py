@@ -36,6 +36,14 @@ from specter.obfuscation_detector import (
     ObfuscationFinding,
     ObfuscationType,
 )
+from specter.config_extractor import (
+    ConfigExtractor,
+    ConfigField,
+    ConfigFieldType,
+    MalwareConfig,
+    StructuredConfigScanner,
+    extract_config,
+)
 
 __all__ = [
     "PEParser",
@@ -79,6 +87,12 @@ __all__ = [
     "ObfuscationReport",
     "ObfuscationFinding",
     "ObfuscationType",
+    "ConfigExtractor",
+    "ConfigField",
+    "ConfigFieldType",
+    "MalwareConfig",
+    "StructuredConfigScanner",
+    "extract_config",
 ]
 
 __version__ = "0.1.0"
