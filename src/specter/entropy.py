@@ -176,6 +176,8 @@ class EntropyAnalyzer:
             b"BZh": "bzip2",
             b"\xfd7zXZ\x00": "xz",
             b"PK\x03\x04": "zip",
+            b"\x04\x22\x4d\x18": "lz4",
+            b"\x28\xb5\x2f\xfd": "zstandard",
             b"MZ": "pe_exe",
             b"\x7fELF": "elf",
             b"\xfe\xed\xfa\xcf": "macho64",
