@@ -55,6 +55,8 @@ _PACKER_SECTION_NAMES: Dict[str, List[str]] = {
     "Crinkler": [".crinkler"],
     "Safengine": [".sdata", ".textbss"],
     "ConfuserEx": [".confuse"],
+    "Hyperion": [".hyperion"],
+    "PElock": [".pelock"],
 }
 
 # Minimum legitimate imports for an unpacked PE
