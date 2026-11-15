@@ -59,6 +59,8 @@ class EntropyAnalyzer:
     # Entropy thresholds
     ENCRYPTED_THRESHOLD = 7.2
     PACKED_THRESHOLD = 6.5
+    VM_PROTECTED_THRESHOLD = 6.3
+    OBFUSCATED_THRESHOLD = 6.0
     CODE_THRESHOLD = 5.0
     TEXT_THRESHOLD = 3.5
 
