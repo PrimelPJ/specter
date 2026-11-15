@@ -37,6 +37,10 @@ class SectionEntropyResult:
             return "encrypted/compressed"
         if self.entropy > 6.5:
             return "packed"
+        if self.entropy > 6.3:
+            return "vm_protected"
+        if self.entropy > 6.0:
+            return "obfuscated"
         if self.entropy > 5.0:
             return "compiled_code"
         if self.entropy > 3.5:
