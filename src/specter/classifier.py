@@ -33,6 +33,8 @@ class MalwareClass(str, Enum):
     LOADER = "loader"
     KEYLOGGER = "keylogger"
     ADWARE = "adware"
+    SPYWARE = "spyware"
+    BOOTKIT = "bootkit"
     UNKNOWN = "unknown"
 
 

@@ -71,6 +71,10 @@ class YaraRule:
             self._compiled_patterns[s.identifier] = s.compile_pattern()
 
 
+MAX_SCAN_SIZE_BYTES = 100 * 1024 * 1024  # 100 MB hard limit per scan
+DEFAULT_SCAN_NAMESPACE = "default"
+
+
 class YaraEngine:
     """
     Pure-Python YARA-style rule engine.
