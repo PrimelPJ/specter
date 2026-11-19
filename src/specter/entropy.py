@@ -61,12 +61,15 @@ class EntropyAnalyzer:
     """
 
     # Entropy thresholds
+    NEAR_RANDOM_THRESHOLD = 7.9    # near-uniform distribution (key material / TRNG output)
     ENCRYPTED_THRESHOLD = 7.2
     PACKED_THRESHOLD = 6.5
     VM_PROTECTED_THRESHOLD = 6.3
     OBFUSCATED_THRESHOLD = 6.0
     CODE_THRESHOLD = 5.0
     TEXT_THRESHOLD = 3.5
+
+    MAX_WINDOW_SIZE = 65536  # upper bound on window_size to prevent empty bin sets
 
     def __init__(self, window_size: int = 256, step_size: int = 64) -> None:
         if window_size < 16:
