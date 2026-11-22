@@ -35,6 +35,7 @@ class MalwareClass(str, Enum):
     ADWARE = "adware"
     SPYWARE = "spyware"
     BOOTKIT = "bootkit"
+    CRYPTOMINER = "cryptominer"
     UNKNOWN = "unknown"
 
 
@@ -132,6 +133,8 @@ class SampleClassifier:
         "downloader": MalwareClass.DOWNLOADER,
         "loader": MalwareClass.LOADER,
         "adware": MalwareClass.ADWARE,
+        "miner": MalwareClass.CRYPTOMINER,
+        "cryptominer": MalwareClass.CRYPTOMINER,
     }
 
     def classify(
