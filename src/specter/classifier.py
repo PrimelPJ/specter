@@ -35,6 +35,7 @@ class MalwareClass(str, Enum):
     ADWARE = "adware"
     SPYWARE = "spyware"
     BOOTKIT = "bootkit"
+    CRYPTOMINER = "cryptominer"
     UNKNOWN = "unknown"
 
 
@@ -132,6 +133,8 @@ class SampleClassifier:
         "downloader": MalwareClass.DOWNLOADER,
         "loader": MalwareClass.LOADER,
         "adware": MalwareClass.ADWARE,
+        "miner": MalwareClass.CRYPTOMINER,
+        "cryptominer": MalwareClass.CRYPTOMINER,
     }
 
     def classify(
@@ -331,6 +334,8 @@ class SampleClassifier:
             return MalwareClass.DOWNLOADER
         if BehaviorCategory.INJECTION in cats:
             return MalwareClass.LOADER
+        if BehaviorCategory.EXECUTION in cats and "T1496" in techs:
+            return MalwareClass.CRYPTOMINER
         return MalwareClass.UNKNOWN
 
 
