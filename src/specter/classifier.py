@@ -324,6 +324,8 @@ class SampleClassifier:
             return MalwareClass.INFOSTEALER
         if BehaviorCategory.COLLECTION in cats and "T1056" in techs:
             return MalwareClass.KEYLOGGER
+        if BehaviorCategory.COLLECTION in cats and BehaviorCategory.NETWORK in cats and BehaviorCategory.INJECTION not in cats:
+            return MalwareClass.SPYWARE
         if BehaviorCategory.INJECTION in cats and BehaviorCategory.NETWORK in cats:
             return MalwareClass.RAT
         if BehaviorCategory.INJECTION in cats and BehaviorCategory.PERSISTENCE in cats:
