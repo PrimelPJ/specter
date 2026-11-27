@@ -19,3 +19,6 @@ samples/
 *.exe
 *.dll
 *.bin
+*.dmp
+*.pcap
+*.pcapng
