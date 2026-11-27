@@ -69,9 +69,15 @@ class EntropyAnalyzer:
     CODE_THRESHOLD = 5.0
     TEXT_THRESHOLD = 3.5
 
+    DEFAULT_WINDOW_SIZE = 256
+    DEFAULT_STEP_SIZE = 64
     MAX_WINDOW_SIZE = 65536  # upper bound on window_size to prevent empty bin sets
 
-    def __init__(self, window_size: int = 256, step_size: int = 64) -> None:
+    def __init__(
+        self,
+        window_size: int = DEFAULT_WINDOW_SIZE,
+        step_size: int = DEFAULT_STEP_SIZE,
+    ) -> None:
         if window_size < 16:
             raise ValueError("Window size must be at least 16")
         if step_size < 1:
